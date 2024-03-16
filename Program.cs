@@ -1,4 +1,4 @@
-﻿/*System.Console.Write("Enter the radius of the circle ...");
+﻿System.Console.Write("Enter the radius of the circle ...");
 int radiusOfCircle=Convert.ToInt32(Console.ReadLine());
 double faceOfCircle=Math.PI*Math.Pow(radiusOfCircle,2);
 double lengthOfCircumference=2*Math.PI*radiusOfCircle; 
@@ -19,4 +19,4 @@ int yearOfBirth=Convert.ToInt32(Console.ReadLine());
 int yearOfNow=2023;
 int ageOfPerson=yearOfNow-yearOfBirth;
 int ageOfPersonByDay=ageOfPerson*365;
-System.Console.WriteLine("Person's age by day  "+ageOfPersonByDay+"  day");*/
+System.Console.WriteLine("Person's age by day  "+ageOfPersonByDay+"  day");
