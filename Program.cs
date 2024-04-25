@@ -1,4 +1,4 @@
-﻿/* System.Console.Write("Enter the radius of the circle ...");
+﻿System.Console.Write("Enter the radius of the circle ...");
 int radiusOfCircle=Convert.ToInt32(Console.ReadLine());
 double faceOfCircle=Math.PI*Math.Pow(radiusOfCircle,2);
 double lengthOfCircumference=2*Math.PI*radiusOfCircle; 
@@ -62,7 +62,7 @@ System.Console.WriteLine("Person's age by day  "+ageOfPersonByDay+"  day");
 
 
     Console.Write("Enter  number ... ");
-    int number= Convert.ToInt32(Console.ReadLine());
+    int numberOfOne= Convert.ToInt32(Console.ReadLine());
     if (number%2==0)
     {
         System.Console.WriteLine("This number is an even number");
@@ -72,7 +72,7 @@ System.Console.WriteLine("Person's age by day  "+ageOfPersonByDay+"  day");
   Console.WriteLine("Enter the text");
 string str=Console.ReadLine();
 Console.WriteLine("Enter the number");
-int number=Convert.ToInt32(Console.ReadLine());
+int numberOfTwo=Convert.ToInt32(Console.ReadLine());
 int numberOfStr=str.Length;
 if(number>numberOfStr)
 {
@@ -122,4 +122,62 @@ switch(daysOfWeek)
   case "Yakshanba":
   System.Console.WriteLine("Sunday");
   break;
-}  */
+} 
+System.Console.WriteLine("Enter minute ..");
+int numberOfMinute=Convert.ToInt32(Console.ReadLine());
+int numberOfWatch=numberOfMinute/60;
+int numberOfResidualMinute=numberOfMinute-numberOfWatch*60;
+System.Console.WriteLine(numberOfWatch +":"+ numberOfResidualMinute);
+
+System.Console.WriteLine("Enter your age");
+int age=Convert.ToInt32(Console.ReadLine());
+if( age>0 && age<=12 ) 
+{
+    System.Console.WriteLine("Child");
+}
+else if(age>=13 && age<=19 )
+{
+    System.Console.WriteLine("Teenager");
+}
+else if(age>=20 && age<=59 )
+{
+   System.Console.WriteLine("Adults");
+}
+else if(age>=60)
+{
+  System.Console.WriteLine("Adult");
+} 
+
+System.Console.WriteLine("Enter the ball of Mathematics");
+int numberOfMath=Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Enter the ball of History");
+int numberOfHistory=Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("Enter the ball of Physics");
+int numberOfPhysics=Convert.ToInt32(Console.ReadLine());
+int averangeOfBalls=(numberOfMath+numberOfHistory+numberOfPhysics)/3;
+string message=
+       averangeOfBalls>=0 && averangeOfBalls<=40
+       ? "Unsatisfactory" 
+       : averangeOfBalls>=41 && averangeOfBalls<=59 
+       ? "Satisfactory"
+       : averangeOfBalls>=60 && averangeOfBalls<=79 
+       ? "Best"
+       : averangeOfBalls>=80 && averangeOfBalls<=100
+       ? "Great" 
+       :  "bunaqa son yuq";
+
+       System.Console.WriteLine(message);
+
+ System.Console.WriteLine("Enter the number");
+ int numberOfYour=Convert.ToInt32(Console.ReadLine());
+ Random rnd=new Random();
+ 
+ for(int i=0;i<1;i++)     
+ {
+    string messageBox=
+       numberOfYour>rnd.Next(0, 100)
+       ? "The secret number is small"
+       : "The secret number is large";
+       System.Console.WriteLine(messageBox);
+     } 
+  
