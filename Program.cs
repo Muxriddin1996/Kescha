@@ -1,4 +1,4 @@
-﻿System.Console.Write("Enter the radius of the circle ...");
+﻿/* System.Console.Write("Enter the radius of the circle ...");
 int radiusOfCircle=Convert.ToInt32(Console.ReadLine());
 double faceOfCircle=Math.PI*Math.Pow(radiusOfCircle,2);
 double lengthOfCircumference=2*Math.PI*radiusOfCircle; 
@@ -68,3 +68,58 @@ System.Console.WriteLine("Person's age by day  "+ageOfPersonByDay+"  day");
         System.Console.WriteLine("This number is an even number");
     }
     else System.Console.WriteLine("This number is an odd number");
+
+  Console.WriteLine("Enter the text");
+string str=Console.ReadLine();
+Console.WriteLine("Enter the number");
+int number=Convert.ToInt32(Console.ReadLine());
+int numberOfStr=str.Length;
+if(number>numberOfStr)
+{
+    System.Console.WriteLine(str.ToUpper());
+}
+else  System.Console.WriteLine(str.ToLower());
+
+int numberOfFirst=15;
+int numberOfSecond=10;
+if(numberOfFirst>numberOfSecond)
+{
+    System.Console.WriteLine( "x is greater than y");
+}
+else if(numberOfFirst<numberOfSecond)
+{
+   System.Console.WriteLine("x is less than y");
+}
+else if(numberOfFirst==numberOfSecond)
+{
+  System.Console.WriteLine("x is equal to y");
+}
+else System.Console.WriteLine("x and y are not comparable");
+
+System.Console.WriteLine("Enter the days of week");
+
+string   daysOfWeek=Console.ReadLine();
+switch(daysOfWeek)
+{
+  case "Dushanba":
+  System.Console.WriteLine("Monday");
+  break;
+  case "Seshanba":
+  System.Console.WriteLine("Tuesday");
+  break;
+  case "Chorshanba":
+  System.Console.WriteLine("Wednesday");
+  break;
+  case "Payshanba":
+  System.Console.WriteLine("Thursday");
+  break;
+  case "Juma":
+  System.Console.WriteLine("Friday");
+  break;
+  case "Shanba":
+  System.Console.WriteLine("Saturday");
+  break;
+  case "Yakshanba":
+  System.Console.WriteLine("Sunday");
+  break;
+}  */
