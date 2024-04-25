@@ -1,4 +1,4 @@
-﻿/* System.Console.Write("Enter the radius of the circle ...");
+﻿System.Console.Write("Enter the radius of the circle ...");
 int radiusOfCircle=Convert.ToInt32(Console.ReadLine());
 double faceOfCircle=Math.PI*Math.Pow(radiusOfCircle,2);
 double lengthOfCircumference=2*Math.PI*radiusOfCircle; 
@@ -62,7 +62,7 @@ System.Console.WriteLine("Person's age by day  "+ageOfPersonByDay+"  day");
 
 
     Console.Write("Enter  number ... ");
-    int number= Convert.ToInt32(Console.ReadLine());
+    int numberOfOne= Convert.ToInt32(Console.ReadLine());
     if (number%2==0)
     {
         System.Console.WriteLine("This number is an even number");
@@ -72,7 +72,7 @@ System.Console.WriteLine("Person's age by day  "+ageOfPersonByDay+"  day");
   Console.WriteLine("Enter the text");
 string str=Console.ReadLine();
 Console.WriteLine("Enter the number");
-int number=Convert.ToInt32(Console.ReadLine());
+int numberOfTwo=Convert.ToInt32(Console.ReadLine());
 int numberOfStr=str.Length;
 if(number>numberOfStr)
 {
@@ -122,4 +122,4 @@ switch(daysOfWeek)
   case "Yakshanba":
   System.Console.WriteLine("Sunday");
   break;
-}  */
+} 
