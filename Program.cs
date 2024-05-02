@@ -1,4 +1,5 @@
-﻿System.Console.Write("Enter the radius of the circle ...");
+﻿using System;
+/*System.Console.Write("Enter the radius of the circle ...");
 int radiusOfCircle=Convert.ToInt32(Console.ReadLine());
 double faceOfCircle=Math.PI*Math.Pow(radiusOfCircle,2);
 double lengthOfCircumference=2*Math.PI*radiusOfCircle; 
@@ -20,6 +21,9 @@ int yearOfNow=2023;
 int ageOfPerson=yearOfNow-yearOfBirth;
 int ageOfPersonByDay=ageOfPerson*365;
 System.Console.WriteLine("Person's age by day  "+ageOfPersonByDay+"  day");
+
+
+     //--------------------------------------------------------------------------------//
 
 
     Console.Write("Enter first number ... ");
@@ -60,6 +64,8 @@ System.Console.WriteLine("Person's age by day  "+ageOfPersonByDay+"  day");
          
     }  System.Console.WriteLine("Sum of numbers up to number  "+s); 
 
+    //--------------------------------------------------------------------------//
+
 
     Console.Write("Enter  number ... ");
     int numberOfOne= Convert.ToInt32(Console.ReadLine());
@@ -68,6 +74,7 @@ System.Console.WriteLine("Person's age by day  "+ageOfPersonByDay+"  day");
         System.Console.WriteLine("This number is an even number");
     }
     else System.Console.WriteLine("This number is an odd number");
+
 
   Console.WriteLine("Enter the text");
 string str=Console.ReadLine();
@@ -123,6 +130,9 @@ switch(daysOfWeek)
   System.Console.WriteLine("Sunday");
   break;
 } 
+
+
+//-----------------------------------------------------------------//
 System.Console.WriteLine("Enter minute ..");
 int numberOfMinute=Convert.ToInt32(Console.ReadLine());
 int numberOfWatch=numberOfMinute/60;
@@ -180,4 +190,105 @@ string message=
        : "The secret number is large";
        System.Console.WriteLine(messageBox);
      } 
-  
+*/
+//--------------------------------------------------------------------//
+
+
+/*string palindrom=Console.ReadLine();
+int lengthOfPalindrom=palindrom.Length;
+string reverseOfPalindrom="";
+for(int i=lengthOfPalindrom-1;i>=0;i--)
+{
+  reverseOfPalindrom=reverseOfPalindrom+palindrom[i].ToString();
+}
+if(palindrom==reverseOfPalindrom)
+{
+  System.Console.WriteLine("Entered string is Palindrome");
+}
+else 
+{
+  System.Console.WriteLine("Entered string is not Palindrome");
+}
+
+int gradusOfSelcium=Convert.ToInt32(Console.ReadLine());
+switch(gradusOfSelcium)
+{
+
+}   
+ internal class Program
+{
+    private static void Main(string[] args)
+    {
+        string choice;
+        double temperature;
+
+        double result;
+
+        Console.WriteLine("Enter F to convert to Fahrenheit or C to convert to Celsius:");
+        choice = Console.ReadLine();
+     
+        switch (choice)
+        {
+            case "C":
+            case "c":
+                temperature = GetTemperature("Fahrenheit");
+                result = CalculateCelsius(temperature);
+                DisplayResult(temperature, "Fahrenheit", result, "Celsius");
+                break;
+            case "F":
+            case "f":
+                temperature = GetTemperature("Celsius");
+                result = CalculateFahrenheit(temperature);
+                DisplayResult(temperature, "Celsius", result, "Fahrenheit");
+                break;
+            default:
+                Console.WriteLine("You must enter C to convert to Celsius or F to convert to Fahrenheit!");
+                break;
+           }
+        }
+        private static double GetTemperature(string label)
+        {
+            string input;
+            double temperature;
+
+            Console.WriteLine("Enter " + label + " temperature:");
+            input = Console.ReadLine();
+            temperature = Convert.ToDouble(input);
+
+            return temperature;
+        }
+
+        private static double CalculateCelsius(double fahrenheit)
+        {
+            double celsius;
+
+            celsius = (fahrenheit - 32) * 5 / 9;
+
+            return celsius;
+        }
+
+        private static double CalculateFahrenheit(double celsius)
+        {
+            double fahrenheit;
+
+            fahrenheit = celsius * 9 / 5 + 32;
+
+            return fahrenheit;
+        }
+
+        private static void DisplayResult(double fahrenheit, string fromLabel, double celsius, string toLabel)
+        {
+            Console.WriteLine(fahrenheit.ToString() + "° " + fromLabel + " is " + celsius.ToString() + "° " + toLabel);
+        }
+    }   
+
+       List<int> numbers = new List<int>{ 9, 4, 7, 2, 5 };
+        numbers.Sort();  // Sort the list in an ascending order
+
+        Console.WriteLine("Sorted numbers:");
+        for (int i = 0; i < numbers.Count; i++)
+        {
+            int number = numbers[i];
+            Console.WriteLine(number);
+        }  */ 
+         
