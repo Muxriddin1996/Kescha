@@ -1,4 +1,11 @@
 ﻿using System;
+/*string password="";
+do{
+    System.Console.WriteLine("Enter the password to talk to me ...");
+    password=Console.ReadLine();
+}
+while (password!="WWWKESCHAUZ");  */
+
 /*System.Console.Write("Enter the radius of the circle ...");
 int radiusOfCircle=Convert.ToInt32(Console.ReadLine());
 double faceOfCircle=Math.PI*Math.Pow(radiusOfCircle,2);
@@ -291,4 +298,50 @@ switch(gradusOfSelcium)
             int number = numbers[i];
             Console.WriteLine(number);
         }  */ 
-         
+
+
+         //-----------------------------------------------------------------------------//
+       
+       /* int counter=1;
+        int sum=0;
+         while(counter<=100)
+         {
+            if(counter%2!=0)
+            {
+              sum+=counter;
+            }
+           counter+=2;
+         }
+         System.Console.WriteLine(sum); */
+
+        /* int[] numbers={1,67,32,194,-239,142,768,921,-654,357,1057,325,849,737};
+         int maximumNumbers=numbers[0];
+         int minimumNumbers=numbers[0];
+         int sum=0;
+         for(int i=1;i<numbers.Length;i++)
+         {
+            if(numbers[i]>maximumNumbers)
+            {
+                maximumNumbers=numbers[i];
+            }
+            if(numbers[i]<minimumNumbers)
+            {
+                minimumNumbers=numbers[i];
+            }
+
+         }
+         sum+=maximumNumbers+minimumNumbers;
+         System.Console.WriteLine($"Maximum and minimum equal to  "+sum); */
+
+         int numberOfFirst=1;
+         int numberOfFactorial=Convert.ToInt32(Console.ReadLine());
+         for(int i=1;i<=numberOfFactorial;i++)
+         {
+            numberOfFirst*=i;
+         }
+         System.Console.WriteLine(numberOfFirst);
+
+     
+      
+
+
