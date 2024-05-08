@@ -24,7 +24,7 @@ System.Console.WriteLine("Convert to carrency "+convertToCarrency+" sum");
 
 System.Console.Write("Enter person's year of birth ...");
 int yearOfBirth=Convert.ToInt32(Console.ReadLine());
-int yearOfNow=2023;
+int yearOfNow=2024;
 int ageOfPerson=yearOfNow-yearOfBirth;
 int ageOfPersonByDay=ageOfPerson*365;
 System.Console.WriteLine("Person's age by day  "+ageOfPersonByDay+"  day");
@@ -199,9 +199,9 @@ string message=
      } 
 */
 //--------------------------------------------------------------------//
+/*
 
-
-/*string palindrom=Console.ReadLine();
+string palindrom=Console.ReadLine();
 int lengthOfPalindrom=palindrom.Length;
 string reverseOfPalindrom="";
 for(int i=lengthOfPalindrom-1;i>=0;i--)
@@ -216,6 +216,10 @@ else
 {
   System.Console.WriteLine("Entered string is not Palindrome");
 }
+
+
+
+//-------------------------------------------------------------------------------------//
 
 int gradusOfSelcium=Convert.ToInt32(Console.ReadLine());
 switch(gradusOfSelcium)
@@ -287,61 +291,28 @@ switch(gradusOfSelcium)
         {
             Console.WriteLine(fahrenheit.ToString() + "° " + fromLabel + " is " + celsius.ToString() + "° " + toLabel);
         }
-    }   
+    }   */
 
+
+
+         //----------------------------------------------------------------------------------------------//
        List<int> numbers = new List<int>{ 9, 4, 7, 2, 5 };
         numbers.Sort();  // Sort the list in an ascending order
-
+        
         Console.WriteLine("Sorted numbers:");
         for (int i = 0; i < numbers.Count; i++)
         {
             int number = numbers[i];
             Console.WriteLine(number);
-        }  */ 
+        }  
+        numbers.Reverse();
+        for (int i = 0; i < numbers.Count; i++)
+        {
+            int number = numbers[i];
+            Console.WriteLine(number);
+        }  
 
 
          //-----------------------------------------------------------------------------//
        
-       /* int counter=1;
-        int sum=0;
-         while(counter<=100)
-         {
-            if(counter%2!=0)
-            {
-              sum+=counter;
-            }
-           counter+=2;
-         }
-         System.Console.WriteLine(sum); */
-
-        /* int[] numbers={1,67,32,194,-239,142,768,921,-654,357,1057,325,849,737};
-         int maximumNumbers=numbers[0];
-         int minimumNumbers=numbers[0];
-         int sum=0;
-         for(int i=1;i<numbers.Length;i++)
-         {
-            if(numbers[i]>maximumNumbers)
-            {
-                maximumNumbers=numbers[i];
-            }
-            if(numbers[i]<minimumNumbers)
-            {
-                minimumNumbers=numbers[i];
-            }
-
-         }
-         sum+=maximumNumbers+minimumNumbers;
-         System.Console.WriteLine($"Maximum and minimum equal to  "+sum); */
-
-         int numberOfFirst=1;
-         int numberOfFactorial=Convert.ToInt32(Console.ReadLine());
-         for(int i=1;i<=numberOfFactorial;i++)
-         {
-            numberOfFirst*=i;
-         }
-         System.Console.WriteLine(numberOfFirst);
-
-     
-      
-
-
+    
